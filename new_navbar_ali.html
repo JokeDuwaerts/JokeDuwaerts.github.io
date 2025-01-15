@@ -1,0 +1,169 @@
+<!Doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mobile Menu</title>
+		<link rel="stylesheet" href="slicknav.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Bree+Serif|Cabin+Sketch|Fredericka+the+Great&display=swap" rel="stylesheet">
+		
+		<style type="text/css" media="screen">
+
+			body {
+			  margin: 0;
+			  height: 100%;
+			  overflow: hidden;
+			}
+
+			body{
+			font-family: 'Cabin Sketch', font-size: 15px;}
+			
+			body {
+			  background-image: url('Pictures/background.jpg');
+			  background-position: center;
+			  
+			}
+			
+			.inner_main_menu {
+				margin:0 auto;
+				margin-top: 20px;
+				width: 900px;
+			}
+		
+			.inner_main_menu ul {
+				margin:0;
+				padding: 53px;
+				list-style: none;
+				text-align: right;
+			}
+			
+			.inner_main_menu ul li {
+				float: none;
+				display: inline-block;
+				position: relative;
+			}
+			
+			.inner_main_menu ul li:nth-child(1) {
+				float: left;
+			}
+			
+			.inner_main_menu ul li:nth-child(2) {
+				float: left;
+			}
+			
+			.inner_main_menu ul li a {
+				color: black;
+				font-size: 20px;
+				font-family: Cabin Sketch;
+				text-decoration: none;
+				display: block;
+				padding: 10px 20px;
+			}
+			
+			.inner_main_menu ul li a:hover {
+				color: blue;
+			}
+			
+			.inner_main_menu ul li ul {
+				position: absolute;
+				top: 40px;
+				left:-999999999px;
+				background-color: grey;
+				padding: 0;
+				width: 170px;
+			}
+			
+			.inner_main_menu ul li ul li {
+				float: left;
+				width: 100%;
+				text-align: left;
+			}
+			
+			.inner_main_menu ul li:hover ul{
+				left: 0px;
+			}
+			
+			.inner_main_menu ul li ul li a {
+				color: white;
+				text-transform: capitalize;
+				font-size: 15px;
+			}
+			
+			.inner_main_menu ul li ul li a:hover {
+				color: yellow;
+				background: green;
+			}
+			
+			#main_menu{width: 100%; position: relative;}
+			
+			.logo_area {
+					width: 150px; height: 150px; position:absolute; left:50%; top: 0; content: ""; margin-left:-75px; text-align: center;
+			}
+			
+			.slicknav_menu {
+				background: rgb(0,0,0,0) none repeat scroll 0 0;
+				fontsize: 16 px;
+				font-family: Cabin Sketch;
+				display: none;
+				padding: 5px;
+				position: fixed;
+				right: 0;
+				width: 100%;
+				z-index: 999999999;
+			}
+			
+			ul.slicknav_nav {
+				background: #2a2a2a;
+			}
+			
+			@media only screen and (min-width: 400px) and (max-width: 767px){
+				.slicknav_menu {
+					display: block;
+				}
+				
+				.inner_main_menu {
+					display: none;
+				}
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<div id="main_menu">
+			<div class="logo_area">
+				<a href=""><img src="Pictures/logo.png" alt=""></a>
+			</div>
+		
+			<div class="inner_main_menu">
+				<ul id="menu">
+					<li><a href="">Portfolio</a>
+						<ul>
+							<li><a href="">Personal Work</a></li>
+							<li><a href="">School Work</a></li>
+							<li><a href="">Professional Work</a></li>
+						</ul>
+					</li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">About</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery.slicknav.min.js"></script>
+	
+	<script src="../dist/jquery.slicknav.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('#menu').slicknav();
+		});
+		</script>
+	
+	</body>

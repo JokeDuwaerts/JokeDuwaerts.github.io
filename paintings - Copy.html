@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Paintings</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./Pictures/icon.ico" />		
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mobile Menu</title>
+		<link rel="stylesheet" href="slicknav.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Bree+Serif|Cabin+Sketch|Fredericka+the+Great&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Economica|Khand|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+		
+	<style type="text/css" media="screen">
+
+			
+
+
+			body p {
+				font-family: Khand;
+			}
+			body {
+			  margin: 0;
+			  height: 100%;
+			  overflow: hidden;
+			  overflow:auto;
+			}
+			
+			h1 {
+				font-family:Cabin Sketch;
+			}
+
+			body{
+				font-family: 'Cabin Sketch'; 
+				font-size: 15px;
+				}
+			
+			body {
+				background-image: url('Pictures/paper2.jpg');
+
+			  background-position: center;
+			  background-attachment: fixed;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			}
+			
+			.big_gallery {
+					margin-left: 30px;
+					margin-right: 30px;
+					align: center;
+				}	
+
+			.titlepage {
+				text-align: center;
+				vertical-align: middle;
+			
+			}
+			
+			.inner_main_menu {
+				margin:0 auto;
+				margin-top: 10px;
+				width: 800px;
+			}
+		
+			.inner_main_menu ul {
+				margin:0;
+				padding: 45px;
+				list-style: none;
+				text-align: right;
+			}
+			
+			.inner_main_menu ul li {
+				float: none;
+				display: inline-block;
+				position: relative;
+			}
+			
+			.inner_main_menu ul li:nth-child(1) {
+				float: left;
+			}
+			
+			.inner_main_menu ul li:nth-child(2) {
+				float: left;
+			}
+			
+			.inner_main_menu ul li a {
+				color: black;
+				font-size: 20px;
+				font-family: Khand;
+				text-decoration: none;
+				display: block;
+				padding: 10px 20px;
+			}
+			
+			.inner_main_menu ul li a:hover {
+				color: #962f09;
+			}
+			
+			.inner_main_menu ul li ul {
+				position: absolute;
+				top: 40px;
+				left:-999999999px;
+				background-color: grey;
+				padding: 0;
+				width: 100px;
+			}
+			
+			.inner_main_menu ul li ul li {
+				float: left;
+				width: 100%;
+				text-align: left;
+			}
+			
+			.inner_main_menu ul li:hover ul{
+				left: 0px;
+			}
+			
+			.inner_main_menu ul li ul li a {
+				color: white;
+				text-transform: capitalize;
+				font-size: 15px;
+			}
+			
+			.inner_main_menu ul li ul li a:hover {
+				color: yellow;
+				background: green;
+			}
+			
+			#main_menu{width: 100%; position: relative;}
+			
+			.logo_area {
+					width: 150px; height: 150px; position:absolute; left:50%; top: 0; content: ""; margin-left:-75px; text-align: center;
+			}
+			
+			.slicknav_menu {
+				background: rgb(0,0,0,0) none repeat scroll 0 0;
+				fontsize: 16 px;
+				font-family: Cabin Sketch;
+				display: none;
+				padding: 5px;
+				position: fixed;
+				right: 0;
+				width: 100%;
+				z-index: 999999999;
+			}
+			
+			ul.slicknav_nav {
+				background: #2a2a2a;
+			}
+			
+			.contact {
+				position: relative;
+				width: 100%;
+				max-width: 1000px;
+				margin:auto;
+				padding-top: 50px;
+				text-align: center;
+			}
+			
+			.media {
+				padding-top: 50px;
+			}
+			
+			.footer {
+				background: white;
+				position: fixed;
+				left:0;
+				height: 30px;
+				width: 100%;
+				bottom: 0px;
+				text-align:center;
+				margin: auto;
+			}
+			
+			.footer p {
+				margin-top: 3px;
+			}
+			
+			.imgM {
+				text-align: center;
+				display: inline-block;
+			}
+			
+			.imgM img {
+				padding-left: 70px;
+				padding-right: 70px;
+			}
+			
+			.imgM p {
+				line-height: 5px;
+			}
+			
+			
+			@media only screen and (min-width: 100px) and (max-width: 850px){
+				.slicknav_menu {
+					display: inline;
+				}
+				
+				.inner_main_menu {
+					display: none;
+				}
+				
+				.logo_area {
+					postition: block;
+					padding-top: 10px;
+				}
+				
+				.contact{
+					max-width: 90%;
+					padding-top: 200px;
+				}
+				.footer{
+					bottom: 0px;
+					margin-top: 50px;
+				}
+				
+				.imgM {
+					padding-bottom: 30px;
+				}
+				
+				.media {
+					padding-bottom: 40px;
+					padding-top: 30px;
+				}
+			}
+				
+			
+				
+			
+
+	</style>
+</head> 
+
+
+
+<body>
+		<div id="main_menu">
+			<div class="logo_area">
+				<div class="mask">
+					<a href=""><img src="Pictures/logo_new.png" class="mask"/></a>
+				</div>
+			</div>
+		
+			<div class="inner_main_menu">
+				<ul id="menu">
+					<li><a href="animation.html">Animation</a></li>
+					<li><a href="paintings.html">Paintings</a></li>
+					<li><a href="sketchbook.html">Sketchbook</a></li>
+					<li><a>Info</a>
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="cv.html">CV</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="jquery.slicknav.min.js"></script>
+		
+		<script src="../dist/jquery.slicknav.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#menu').slicknav();
+				});
+			</script>
+				
+
+					
+					
+
+
+
+		<div class="footer">
+			<p>&#9400 2023-2025 Joke Duwaerts.</p>
+		</div>
+
+	</body>
+</html>

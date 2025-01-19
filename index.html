@@ -32,9 +32,16 @@
 			body{
 			font-family: 'Cabin Sketch', font-size: 15px;}
 			.titlepage {
+			position: relative;
 				text-align: center;
 				vertical-align: middle;
+				z-index: 2;
 
+			}
+			.titlepage img {
+			    max-height: 30%;
+			    min-height: 25%;
+			    max-width: 80%;
 			}
 			body {
 				background-image: url('Pictures/paper2.jpg');
@@ -50,13 +57,17 @@
 					justify-content: center;
 					align-items: center;
 					overflow: hidden;
+					z-index: 1;
+
+
 
 				}
 				.fill img {
-				 position:fixed;
-				bottom:0px;
+				 	position:fixed;
+					bottom:0px;
 
 					flex-shrink: 0;
+
 					min-width: 10%;
 					min-height: 10%;
 
@@ -301,7 +312,7 @@
 						}
 						
 						.white_space1 {
-							height: 200px;
+							height: 150px;
 						  }
 						
 						.row{
@@ -331,7 +342,7 @@
 						}
 
 						.fill {
-						 margin-top: 200px;
+						 margin-top: 80px;
 						 }
 
 						.fill img {
@@ -339,7 +350,7 @@
 						min-width: 80%;
 						min-height: 60%;
 						max-width: none;
-						max-height: 90%;
+						max-height: 75%;
 					}
 	
 				}
@@ -394,16 +405,15 @@
 
 		<div class="white_space1"> </div>
 
-				<div class="titlepage">
-					<h1>Joke Duwaerts</h1>
-					<div class="text_box">
-						<p>2D Animator based in Belgium</i>.</p>
-					</div>
+<div class="titlepage">
+					<img src="Pictures/name.png" alt="" />
 				</div>
 
 				<div class="fill">
 					<img src="Pictures/intro.png" alt="" />
 				</div>
+
+
 
 
 

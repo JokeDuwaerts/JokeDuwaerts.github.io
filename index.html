@@ -13,7 +13,8 @@
 <style>
 
 			
-
+			.screen {
+			}
 
 			body p {
 				font-family: Khand;
@@ -39,9 +40,10 @@
 
 			}
 			.titlepage img {
-			    max-height: 25%;
-			    min-height: 22%;
-			    max-width: 80%;
+
+			    max-height: 18%;
+			    min-height: 8%;
+			    max-width: 450px;
 			}
 			body {
 				background-image: url('Pictures/paper2.jpg');
@@ -52,7 +54,23 @@
 			  background-size: cover;
 			}
 
-				.fill {
+			.fill {
+				display: flex;
+				height: 800px;
+				justify-content: center;
+				align-items: center;
+
+				background-color: ;
+			}
+
+			.fill img {
+
+				max-width: 100%;
+				bottom: 0px;
+
+			}
+
+			/* .fill {
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -74,7 +92,11 @@
 					max-height: 80%;
 
 
-				}
+				} */
+
+
+
+
 			.inner_main_menu {
 				margin:0 auto;
 				margin-top: 10px;
@@ -235,7 +257,7 @@
 				  clear: both;
 				}
 	
-			
+
 					
 				.column-left img {
 					float:right;
@@ -349,9 +371,9 @@
 						.fill img {
 						flex-shrink: 0;
 						min-width: 80%;
-						min-height: 60%;
+						min-height: 80%;
 						max-width: none;
-						max-height: 75%;
+						max-height: 90%;
 					}
 	
 				}
@@ -369,52 +391,53 @@
 </style>
 </head>
 <body>
+<div class="screen">
+			<div id="main_menu">
 
-<div id="main_menu">
-			<div class="logo_area">
-				<div class="mask">
-					<a href=""><img src="Pictures/logo_no_text.png" class="mask"/></a>
+				<div class="logo_area">
+					<div class="mask">
+						<a href=""><img src="Pictures/logo_no_text.png" class="mask"/></a>
+					</div>
+				</div>
+
+				<div class="inner_main_menu">
+					<ul id="menu">
+						<li><a href="animation.html">Animation</a></li>
+						<li><a href="paintings.html">Paintings</a></li>
+						<li><a href="sketchbook.html">Sketchbook</a></li>
+						<li><a>Info</a>
+							<ul>
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="cv.html">CV</a></li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</div>
-		
-			<div class="inner_main_menu">
-				<ul id="menu">
-					<li><a href="animation.html">Animation</a></li>
-					<li><a href="paintings.html">Paintings</a></li>
-					<li><a href="sketchbook.html">Sketchbook</a></li>
-					<li><a>Info</a>
-						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="cv.html">CV</a></li>
-						</ul>
-					</li>
-				</ul>
+
+
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+					<script src="jquery.slicknav.min.js"></script>
+
+					<script src="../dist/jquery.slicknav.js"></script>
+						<script type="text/javascript">
+							$(document).ready(function(){
+								$('#menu').slicknav({label: '',});
+							});
+						</script>
+
+			<div class="white_space1"> </div>
+
+			<div class="titlepage">
+								<img src="Pictures/name.png" alt="" />
+							</div>
+
+			<div class="fill">
+				<img src="Pictures/intro.png" alt="" />
 			</div>
-		</div>
 
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-				<script src="jquery.slicknav.min.js"></script>
-				
-				<script src="../dist/jquery.slicknav.js"></script>
-					<script type="text/javascript">
-						$(document).ready(function(){
-							$('#menu').slicknav({label: '',});
-						});
-					</script>
-
-		<div class="white_space1"> </div>
-
-<div class="titlepage">
-					<img src="Pictures/name.png" alt="" />
-				</div>
-
-				<div class="fill">
-					<img src="Pictures/intro.png" alt="" />
-				</div>
-
-
+</div>
 
 
 
